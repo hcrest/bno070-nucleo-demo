@@ -1,0 +1,10 @@
+# Emacs temp files
+*~
+\#*
+
+# Output files
+EWARM/settings/
+EWARM/sh1-demo.dep
+EWARM/sh1-demo/
+
+
