@@ -1085,6 +1085,21 @@
   <group>
     <name>Drivers</name>
     <group>
+      <name>BNO070</name>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\bno070-driver\bno070.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\bno070-driver\SensorHub.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\bno070-driver\SensorHubHid.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\bno070-driver\sh_util.c</name>
+      </file>
+    </group>
+    <group>
       <name>CMSIS</name>
       <file>
         <name>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c</name>
@@ -1172,21 +1187,6 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Hillcrest\sh_bno_stm32f401.c</name>
-      </file>
-    </group>
-    <group>
-      <name>SH-1</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\sh1-mcu-driver\bno070.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\sh1-mcu-driver\SensorHub.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\sh1-mcu-driver\SensorHubHid.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\sh1-mcu-driver\sh_util.c</name>
       </file>
     </group>
   </group>

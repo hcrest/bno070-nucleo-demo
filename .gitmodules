@@ -1,0 +1,3 @@
+[submodule "Drivers/bno070-driver"]
+	path = Drivers/bno070-driver
+	url = git@github.com:hcrest/bno070-driver.git
