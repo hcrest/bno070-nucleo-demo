@@ -6,7 +6,7 @@ Development Kit.  This software provides a simple example for
 obtaining motion data and configuring the BNO070 and is designed to
 work with the [BNO070 Driver](https://github.com/hcrest/bno070-driver).
 
-Further information about the BNO070 can be found on the website for [Hillcrest Labs\(http://hillcrestlabs.com/products/bno070).
+Further information about the BNO070 can be found on the website for [Hillcrest Labs](http://hillcrestlabs.com/products/bno070).
 
 ## Requirements
 
