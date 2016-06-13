@@ -1,22 +1,24 @@
-# BNO070 Example Application for Nucleo STM32F401RE / STM32F411RE
+# BNO070 Example Application for Nucleo STM32F411RE
 
-This is the Nucleo version of the BNO070 SH-1 demo application.  It runs on
-the Hillcrest BNO070 Evaluation Kit which consists of an STM32F411RE
-Nucleo board and a shield board hosting the BNO070 sensor hub.
+The BNO070 Sensor Hub [Demo app](https://github.com/hcrest/bno070-nucleo-demo) is a set of example code designed to
+run on the STM32F411 Nucleo platform included with the BNO070
+Development Kit.  This software provides a simple example for
+obtaining motion data and configuring the BNO070 and is designed to
+work with the [BNO070 Driver](https://github.com/hcrest/bno070-driver).
 
+Further information about the BNO070 can be found on the website for [Hillcrest Labs](http://hillcrestlabs.com/products/bno070).
 
 ## Requirements
 
-* IAR Embedded Workbench for ARM (EWARM) version 7.4
-
-* STM32F411 or STM32F401 Nucleo board
+* STM32F411 Nucleo board
 
 * Hillcrest BNO070 Development board
 
-
 Note: The Hillcrest BNO070 Development kit includes all of these components.
 
-Before attempting to build the demo project, the IAR tools and Nucleo USB drivers should be installed.
+Before attempting to build the demo project, install the IAR Embedded
+Workbench ARM tools and Nucleo USB drivers according to instruction
+with the STM32F411 Nucleo kit.
 
 ## Preparing the Software
 
@@ -50,7 +52,7 @@ The demo software can also be obtained as two zip files.
   
   * The downloaded file will be named bno070-nucleo-demo-master.zip.
   
-  * Next, browse to https://github.com/hcrest/bno070-nucleo-demo
+  * Next, browse to https://github.com/hcrest/bno070-driver
   
   * Again, click the "Clone or download" button, then click "Download ZIP"
   
@@ -63,9 +65,9 @@ The demo software can also be obtained as two zip files.
   This creates a new folder named bno070-nucleo-demo-master.  Within
   it is ANOTHER folder also named bno070-nucleo-demo-master.
 
-  * Rename this inner folder as bno070-nucleo-demo
+  * Rename this inner folder as bno070-nucleo-demo.
 	
-  * move it to the location where you want the project to reside.  For
+  * Move it to the location where you want the project to reside.  For
     brevity, I'll assume this is c:\bno070-nucleo-demo\
   
   * Select the downloaded bno070-driver-master.zip, right click and
@@ -80,6 +82,27 @@ The demo software can also be obtained as two zip files.
     workspace created previously.  This would be
     c:\bno070-nucleo-demo\Drivers\bno070-driver\, for example.
 
+When finished, the project tree should look like this:
+
+```
+bno070-nucleo-demo
+|  README.md
+|  ...
++-- Drivers
+|   +-- bno070-driver
+|   |      bno070.c
+|   |      ...
+|   +-- CMSIS
+|   |      ...
+|   +-- STM32F4xx_HAL_Driver
+|          ...
+|
++-- EWARM
++-- Hillcrest
++-- Inc
++-- Middlewares
++-- Src
+```
 
 ## Building the Code
 
